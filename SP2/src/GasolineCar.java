@@ -41,6 +41,6 @@ public class GasolineCar extends Car {
 
     @Override
     public String toString() {
-        return "Gasoline, " + "RegNr: " + getRegNr() + ", Brand: " + getBrand() + ", Model: " + getModel() + ", " + getYear() + ", Number of Doors: " + getNumberOfDoors() + ", Octane Number: " + getOctaneNumber() + ", KM per liter " + getKmPrL() + "km/l";
+        return "Price: " + calculateGreenTax() + ",- " + getBrand() + " " + getModel() + ", Gasoline, RegNr: " + getRegNr() + ", Year: " + getYear() + ", Doors: " + getNumberOfDoors() + ", Octane Number: " + getOctaneNumber() + ", Consumption: " + getKmPrL() + "km/l";
     }
 }

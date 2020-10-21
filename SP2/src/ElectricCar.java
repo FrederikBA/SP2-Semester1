@@ -64,6 +64,6 @@ public class ElectricCar extends Car {
 
     @Override
     public String toString() {
-        return "Electric, " + "RegNr: " + getRegNr() + ", Brand: " + getBrand() + ", Model: " + getModel() + ", " + getYear() + ", Number of Doors: " + getNumberOfDoors() + ", Battery Capacity: " + getBatteryCapacity() + ", Max KM: " + getMaxKm() + ", WH per KM " + getWhPrKm() + "wh/km";
+        return "Price: " + calculateGreenTax() + ",- " + getBrand() + " " + getModel() + ", Electric, RegNr: " + getRegNr() + ", Year: " + getYear() + ", Doors: " + getNumberOfDoors() + ", Battery Capacity: " + getBatteryCapacity() + ", Max KM: " + getMaxKm() + ", WH per KM: " + getWhPrKm() + "wh/km";
     }
 }

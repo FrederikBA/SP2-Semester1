@@ -54,6 +54,6 @@ public class DieselCar extends Car {
 
     @Override
     public String toString() {
-        return "Diesel, " + "RegNr: " + getRegNr() + ", Brand: " + getBrand() + ", Model: " + getModel() + ", " + getYear() + ", Number of Doors: " + getNumberOfDoors() + ", Particle filter: " + getHasParticleFilter() + ", KM per liter " + getKmPrL() + "km/l";
+        return "Price: " + calculateGreenTax() + ",- " + getBrand() + " " + getModel() + ", Diesel, RegNr: " + getRegNr() + ", Year: " + getYear() + ", Doors: " + getNumberOfDoors() + ", Particle filter: " + getHasParticleFilter() + ", Consumption: " + getKmPrL() + "km/l";
     }
 }
