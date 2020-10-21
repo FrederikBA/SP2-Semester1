@@ -2,6 +2,9 @@ public class ElectricCar extends Car {
     private int batteryCapacity;
     private int maxKm;
     private int whPrKm;
+    private double kmPrL;
+    private double result;
+
 
     public ElectricCar(int regNr, String brand, String model, int year, int numberOfDoors, int batteryCapacity, int maxKm, int whPrKm) {
         super(regNr, brand, model, year, numberOfDoors);
@@ -11,7 +14,20 @@ public class ElectricCar extends Car {
     }
 
     protected double calculateGreenTax() {
-        return 0;
+        result = whPrKm/91.25;
+        kmPrL = 100/result;
+        if (kmPrL >= 20 && kmPrL < 50) {
+            return 330;
+        } else if (kmPrL >= 15 && kmPrL < 20) {
+            return 1050;
+        } else if (kmPrL >= 10 && kmPrL < 15) {
+            return 2340;
+        } else if (kmPrL >= 5 && kmPrL < 10) {
+            return 5500;
+        } else if (kmPrL < 5) ;
+        {
+            return 10470;
+        }
     }
 
     public int getBatteryCapacity() {
@@ -36,6 +52,14 @@ public class ElectricCar extends Car {
 
     public void setWhPrKm(int whPrKm) {
         this.whPrKm = whPrKm;
+    }
+
+    public double getKmPrL() {
+        return kmPrL;
+    }
+
+    public void setKmPrL(double kmPrL) {
+        this.kmPrL = kmPrL;
     }
 
     @Override
