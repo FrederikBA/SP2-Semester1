@@ -14,8 +14,8 @@ public class ElectricCar extends Car {
     }
 
     protected double calculateGreenTax() {
-        result = whPrKm/91.25;
-        kmPrL = 100/result;
+        result = whPrKm / 91.25;
+        kmPrL = 100 / result;
         if (kmPrL >= 20 && kmPrL < 50) {
             return 330;
         } else if (kmPrL >= 15 && kmPrL < 20) {
