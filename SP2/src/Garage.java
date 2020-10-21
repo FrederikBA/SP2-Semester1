@@ -10,7 +10,13 @@ public class Garage {
     }
 
     protected double calculateGreenTaxForParkedCars() {
-        return 0;
+        double sum = 0;
+
+        for (Car car : cars) {
+            sum += car.calculateGreenTax();
+        }
+
+        return sum;
     }
 
     public String toString() {
