@@ -16,7 +16,9 @@ public abstract class Car {
     }
 
 
-    abstract protected double calculateGreenTax();
+    protected double calculateGreenTax() {
+        return 0;
+    }
 
     public String getRegNr() {
         return regNr;

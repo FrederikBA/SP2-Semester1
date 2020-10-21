@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Garage {
     ArrayList<Car> cars = new ArrayList<Car>();
@@ -10,8 +9,8 @@ public class Garage {
 
     }
 
-    public void calculateGreenTaxForParkedCars() {
-
+    protected double calculateGreenTaxForParkedCars() {
+        return 0;
     }
 
     public String toString() {
@@ -26,6 +25,5 @@ public class Garage {
         return result;
 
     }
-
-
+    
 }

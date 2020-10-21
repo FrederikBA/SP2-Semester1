@@ -8,7 +8,7 @@ public class GasolineCar extends Car {
         this.kmPrL = kmPrL;
     }
 
-    public double calculateGreenTax() {
+    protected double calculateGreenTax() {
         if (kmPrL >= 20 && kmPrL < 50) {
             return 330;
         } else if (kmPrL >= 15 && kmPrL < 20) {

@@ -10,6 +10,7 @@ public class Main {
         garage.addCar(new DieselCar("AF 22 454", "Citroen", "C4", 2012, 4, true, 16));
 
         System.out.println(garage.toString());
+        System.out.println(garage.calculateGreenTaxForParkedCars());
 
 
 
