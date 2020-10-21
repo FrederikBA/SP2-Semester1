@@ -1,21 +1,31 @@
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Garage {
-    private ArrayList <Car> cars;
+    ArrayList<Car> cars = new ArrayList<Car>();
 
-    public Garage(ArrayList<Car> cars) {
-        this.cars = cars;
-    }
+    public void addCar(Car car) {
 
-    private void calculateGreenTaxForParkedCars() {
+        cars.add(car);
 
     }
 
-    public ArrayList<Car> getCars() {
-        return cars;
+    public void calculateGreenTaxForParkedCars() {
+
     }
 
-    public void setCars(ArrayList<Car> cars) {
-        this.cars = cars;
+    public String toString() {
+        String result = "";
+
+        for (Car i : cars) {
+
+            result += "\n" + i;
+
+        }
+
+        return result;
+
     }
+
+
 }

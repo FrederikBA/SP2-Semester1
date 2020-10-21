@@ -1,5 +1,5 @@
 public abstract class Car {
-    private int regNr;
+    private String regNr;
     private String brand;
     private String model;
     private int year;
@@ -7,7 +7,7 @@ public abstract class Car {
 
     private int numberOfDoors;
 
-    public Car(int regNr, String brand, String model, int year, int numberOfDoors) {
+    public Car(String regNr, String brand, String model, int year, int numberOfDoors) {
         this.regNr = regNr;
         this.brand = brand;
         this.model = model;
@@ -15,9 +15,10 @@ public abstract class Car {
         this.numberOfDoors = numberOfDoors;
     }
 
+
     abstract protected double calculateGreenTax();
 
-    public int getRegNr() {
+    public String getRegNr() {
         return regNr;
     }
 
@@ -37,7 +38,7 @@ public abstract class Car {
         return numberOfDoors;
     }
 
-    public void setRegNr(int regNr) {
+    public void setRegNr(String regNr) {
         this.regNr = regNr;
     }
 

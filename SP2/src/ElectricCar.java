@@ -6,7 +6,7 @@ public class ElectricCar extends Car {
     private double result;
 
 
-    public ElectricCar(int regNr, String brand, String model, int year, int numberOfDoors, int batteryCapacity, int maxKm, int whPrKm) {
+    public ElectricCar(String regNr, String brand, String model, int year, int numberOfDoors, int batteryCapacity, int maxKm, int whPrKm) {
         super(regNr, brand, model, year, numberOfDoors);
         this.batteryCapacity = batteryCapacity;
         this.maxKm = maxKm;
@@ -64,10 +64,6 @@ public class ElectricCar extends Car {
 
     @Override
     public String toString() {
-        return "ElectricCar{" +
-                "batteryCapacity=" + batteryCapacity +
-                ", maxKm=" + maxKm +
-                ", whPrKm=" + whPrKm +
-                '}';
+        return "Electric, " + "RegNr: " + getRegNr() + ", Brand: " + getBrand() + ", Model: " + getModel() + ", " + getYear() + ", Number of Doors: " + getNumberOfDoors() + ", Battery Capacity: " + getBatteryCapacity() + ", Max KM: " + getMaxKm() + ", WH per KM " + getWhPrKm() + "wh/km";
     }
 }

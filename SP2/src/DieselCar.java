@@ -2,7 +2,7 @@ public class DieselCar extends Car {
     private boolean hasParticleFilter;
     private int kmPrL;
 
-    public DieselCar(int regNr, String brand, String model, int year, int numberOfDoors, boolean hasParticleFilter, int kmPrL) {
+    public DieselCar(String regNr, String brand, String model, int year, int numberOfDoors, boolean hasParticleFilter, int kmPrL) {
         super(regNr, brand, model, year, numberOfDoors);
         this.hasParticleFilter = hasParticleFilter;
         this.kmPrL = kmPrL;
@@ -36,7 +36,7 @@ public class DieselCar extends Car {
         }
     }
 
-    public boolean isHasParticleFilter() {
+    public boolean getHasParticleFilter() {
         return hasParticleFilter;
     }
 
@@ -54,9 +54,6 @@ public class DieselCar extends Car {
 
     @Override
     public String toString() {
-        return "DieselCar{" +
-                "hasParticleFilter=" + hasParticleFilter +
-                ", kmPrL=" + kmPrL +
-                '}';
+        return "Diesel, " + "RegNr: " + getRegNr() + ", Brand: " + getBrand() + ", Model: " + getModel() + ", " + getYear() + ", Number of Doors: " + getNumberOfDoors() + ", Particle filter: " + getHasParticleFilter() + ", KM per liter " + getKmPrL() + "km/l";
     }
 }
